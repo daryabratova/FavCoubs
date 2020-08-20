@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Favtoks } from './containers/Favtoks';
+import { FavCoubs } from './containers/FavCoubs';
 
 function App() {
   return (
-    <div className="App">
-    <Favtoks/>
+    <div>
+    <FavCoubs/>
     </div>
   );
 }
