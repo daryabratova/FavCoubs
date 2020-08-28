@@ -6,7 +6,7 @@ let playedVids = [videosSrc[0]];
 
 export const FavCoubs = () => {
   const [video, setVideo] = useState(videosSrc[0]);
-  const [size, setSize] = useState(["800", "600"]);
+  const [size, setSize] = useState(["360", "360"]);
 
   const updateVid = () => {
     let unplayedVids = videosSrc.filter((vid) => !playedVids.includes(vid));
@@ -24,10 +24,12 @@ export const FavCoubs = () => {
 
   useEffect(() => {
     const sizeChange = () => {
-      if (window.innerWidth < 996) {
-        setSize(["360", "360"]);
-      } else {
+      if (window.innerWidth > 550 && window.innerWidth < 996) {
+        setSize(["500", "600"]);
+      } else if (window.innerWidth > 996) {
         setSize(["800", "600"]);
+      } else {
+        setSize(["360", "360"]);
       }
     };
 

@@ -45,38 +45,39 @@ html {
     font-weight: 600;
     box-shadow: 0 0 0 7px rgb(192, 190, 190) inset;
 
-    &:hover, &:focus {
-        background: rgb(161, 160, 160);
-        cursor: pointer;
+    &:hover,
+    &:focus {
+      background: rgb(161, 160, 160);
+      cursor: pointer;
     }
   }
 }
 
-@media (min-width: 996px) {
+@media (min-width: 550px) and (max-width: 996px) {
   .app {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     &__layout {
       height: 900px;
     }
-  
+
     &__title {
       font-size: 2em;
       margin: 15px 0;
       text-align: center;
     }
-  
+
     &__video {
       margin-top: 45px;
     }
-  
+
     &__update {
       text-align: center;
     }
-  
+
     &__update-vid {
       margin: 20px auto;
       border: none;
@@ -87,12 +88,57 @@ html {
       font-size: 1.5rem;
       font-weight: 600;
       box-shadow: 0 0 0 7px rgb(192, 190, 190) inset;
-  
-      &:hover, &:focus {
-          background: rgb(161, 160, 160);
-          cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background: rgb(161, 160, 160);
+        cursor: pointer;
       }
     }
   }
-  
+}
+
+@media (min-width: 996px) {
+  .app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__layout {
+      height: 900px;
+    }
+
+    &__title {
+      font-size: 2em;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    &__video {
+      margin-top: 45px;
+    }
+
+    &__update {
+      text-align: center;
+    }
+
+    &__update-vid {
+      margin: 20px auto;
+      border: none;
+      background-color: rgb(192, 190, 190);
+      width: 260px;
+      height: 70px;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 0 0 7px rgb(192, 190, 190) inset;
+
+      &:hover,
+      &:focus {
+        background: rgb(161, 160, 160);
+        cursor: pointer;
+      }
+    }
+  }
 }
