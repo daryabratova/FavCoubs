@@ -17,16 +17,17 @@ html {
   align-items: center;
 
   &__layout {
-    height: 900px;
+    height: 100vh;
   }
 
   &__title {
-    margin: 30px 0;
+    font-size: 26px;
+    margin: 35px 0;
     text-align: center;
   }
 
   &__video {
-    margin-top: 45px;
+    margin-top: 25px;
   }
 
   &__update {
@@ -34,13 +35,13 @@ html {
   }
 
   &__update-vid {
-    margin: 20px auto;
+    margin: 25px auto;
     border: none;
     background-color: rgb(192, 190, 190);
-    width: 260px;
-    height: 70px;
+    width: 165px;
+    height: 40px;
     border-radius: 30px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     box-shadow: 0 0 0 7px rgb(192, 190, 190) inset;
 
@@ -49,4 +50,49 @@ html {
         cursor: pointer;
     }
   }
+}
+
+@media (min-width: 996px) {
+  .app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &__layout {
+      height: 900px;
+    }
+  
+    &__title {
+      font-size: 2em;
+      margin: 15px 0;
+      text-align: center;
+    }
+  
+    &__video {
+      margin-top: 45px;
+    }
+  
+    &__update {
+      text-align: center;
+    }
+  
+    &__update-vid {
+      margin: 20px auto;
+      border: none;
+      background-color: rgb(192, 190, 190);
+      width: 260px;
+      height: 70px;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 0 0 7px rgb(192, 190, 190) inset;
+  
+      &:hover, &:focus {
+          background: rgb(161, 160, 160);
+          cursor: pointer;
+      }
+    }
+  }
+  
 }
