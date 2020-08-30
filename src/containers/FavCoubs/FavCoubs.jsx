@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import "./style.scss";
 import { videosSrc } from "./data";
+import { getVideoSize } from "../../helpers/getVideoSize";
+
+import "./style.scss";
 
 let playedVids = [videosSrc[0]];
 
 export const FavCoubs = () => {
   const [video, setVideo] = useState(videosSrc[0]);
-  const [size, setSize] = useState(["360", "360"]);
+  const [size, setSize] = useState(getVideoSize());
 
   const updateVid = () => {
     let unplayedVids = videosSrc.filter((vid) => !playedVids.includes(vid));
@@ -18,23 +20,17 @@ export const FavCoubs = () => {
 
     const randomVid =
       unplayedVids[Math.floor(Math.random() * unplayedVids.length)];
+
     playedVids.push(randomVid);
     setVideo(randomVid);
   };
 
   useEffect(() => {
-    const sizeChange = () => {
-      if (window.innerWidth > 550 && window.innerWidth < 996) {
-        setSize(["500", "600"]);
-      } else if (window.innerWidth > 996) {
-        setSize(["800", "600"]);
-      } else {
-        setSize(["360", "360"]);
-      }
-    };
+    const changeSize = () => {
+      setSize(getVideoSize());
+    }
 
-    window.addEventListener("resize", sizeChange, false);
-    window.addEventListener("load", sizeChange, false);
+    window.addEventListener("resize", changeSize, false);
   }, []);
 
   return (
