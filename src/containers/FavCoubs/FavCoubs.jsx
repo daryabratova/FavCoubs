@@ -37,8 +37,9 @@ export const FavCoubs = () => {
     <div className="app">
       <div className="app__layout">
         <h1 className="app__title">Enjoy my favourite coubs!</h1>
+        <div className="app__video">
         <iframe
-          className="app__video"
+          title="video"
           src={`//coub.com/embed/${video}?muted=false&autostart=true&originalSize=false&startWithHD=false`}
           width={size[0]}
           height={size[1]}
@@ -46,9 +47,10 @@ export const FavCoubs = () => {
           frameborder="0"
           allow="autoplay"
         ></iframe>
+        </div>
         <div className="app__update">
           <button
-            className="app__update-vid"
+            className="app__update-button"
             onClick={() => {
               updateVid();
             }}

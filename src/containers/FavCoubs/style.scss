@@ -32,10 +32,10 @@ html {
 
   &__update {
     text-align: center;
+    margin: 25px auto;
   }
 
-  &__update-vid {
-    margin: 25px auto;
+  &__update-button {
     border: none;
     background-color: rgb(192, 190, 190);
     width: 165px;
@@ -76,10 +76,10 @@ html {
 
     &__update {
       text-align: center;
+      margin: 20px auto;
     }
 
-    &__update-vid {
-      margin: 20px auto;
+    &__update-button {
       border: none;
       background-color: rgb(192, 190, 190);
       width: 260px;
@@ -121,10 +121,10 @@ html {
 
     &__update {
       text-align: center;
+      margin: 20px auto;
     }
 
-    &__update-vid {
-      margin: 20px auto;
+    &__update-button {
       border: none;
       background-color: rgb(192, 190, 190);
       width: 260px;
