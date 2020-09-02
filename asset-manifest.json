@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/FavCoubs/static/css/main.415c6742.chunk.css",
-    "main.js": "/FavCoubs/static/js/main.a3ebc3ad.chunk.js",
-    "main.js.map": "/FavCoubs/static/js/main.a3ebc3ad.chunk.js.map",
+    "main.css": "/FavCoubs/static/css/main.c8ef4027.chunk.css",
+    "main.js": "/FavCoubs/static/js/main.8f54befb.chunk.js",
+    "main.js.map": "/FavCoubs/static/js/main.8f54befb.chunk.js.map",
     "runtime-main.js": "/FavCoubs/static/js/runtime-main.fa13989a.js",
     "runtime-main.js.map": "/FavCoubs/static/js/runtime-main.fa13989a.js.map",
     "static/js/2.e3bc5be2.chunk.js": "/FavCoubs/static/js/2.e3bc5be2.chunk.js",
     "static/js/2.e3bc5be2.chunk.js.map": "/FavCoubs/static/js/2.e3bc5be2.chunk.js.map",
     "index.html": "/FavCoubs/index.html",
-    "precache-manifest.0a51de2d56e830fee58ba17b7341c310.js": "/FavCoubs/precache-manifest.0a51de2d56e830fee58ba17b7341c310.js",
+    "precache-manifest.4b6d972d4f411faa74c99161ffd2861f.js": "/FavCoubs/precache-manifest.4b6d972d4f411faa74c99161ffd2861f.js",
     "service-worker.js": "/FavCoubs/service-worker.js",
-    "static/css/main.415c6742.chunk.css.map": "/FavCoubs/static/css/main.415c6742.chunk.css.map",
+    "static/css/main.c8ef4027.chunk.css.map": "/FavCoubs/static/css/main.c8ef4027.chunk.css.map",
     "static/js/2.e3bc5be2.chunk.js.LICENSE.txt": "/FavCoubs/static/js/2.e3bc5be2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fa13989a.js",
     "static/js/2.e3bc5be2.chunk.js",
-    "static/css/main.415c6742.chunk.css",
-    "static/js/main.a3ebc3ad.chunk.js"
+    "static/css/main.c8ef4027.chunk.css",
+    "static/js/main.8f54befb.chunk.js"
   ]
 }

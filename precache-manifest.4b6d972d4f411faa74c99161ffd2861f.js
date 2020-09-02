@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62e1408befcafb4e9c4c126b98303815",
+    "revision": "86750d64adbdc80e1f12703b992e0f6a",
     "url": "/FavCoubs/index.html"
   },
   {
-    "revision": "c30f9676cfd3d4ef1387",
-    "url": "/FavCoubs/static/css/main.415c6742.chunk.css"
+    "revision": "918d6fd9b118fbe52299",
+    "url": "/FavCoubs/static/css/main.c8ef4027.chunk.css"
   },
   {
     "revision": "4969c70d801afb5629db",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FavCoubs/static/js/2.e3bc5be2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c30f9676cfd3d4ef1387",
-    "url": "/FavCoubs/static/js/main.a3ebc3ad.chunk.js"
+    "revision": "918d6fd9b118fbe52299",
+    "url": "/FavCoubs/static/js/main.8f54befb.chunk.js"
   },
   {
     "revision": "c8c384d68cfb7f15c730",
