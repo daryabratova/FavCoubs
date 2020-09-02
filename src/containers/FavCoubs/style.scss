@@ -62,13 +62,13 @@ html {
 @media (min-width: 996px) {
   .app {
     &__title {
-      font-size: 2em;
+      font-size: 3em;
     }
 
     &__update-button {
-      width: 260px;
-      height: 70px;
-      font-size: 1.5rem;
+      width: 300px;
+      height: 100px;
+      font-size: 2rem;
     }
   }
 }
