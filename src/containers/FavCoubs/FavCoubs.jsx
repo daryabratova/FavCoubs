@@ -28,16 +28,15 @@ export const FavCoubs = () => {
   useEffect(() => {
     const changeSize = () => {
       setSize(getVideoSize());
-    }
+    };
 
     window.addEventListener("resize", changeSize, false);
   }, []);
 
   return (
     <div className="app">
-      <div className="app__layout">
-        <h1 className="app__title">Enjoy my favourite coubs!</h1>
-        <div className="app__video">
+      <h1 className="app__title">Enjoy my favourite coubs!</h1>
+      <div className="app__video">
         <iframe
           title="video"
           src={`//coub.com/embed/${video}?muted=false&autostart=true&originalSize=false&startWithHD=false`}
@@ -47,17 +46,16 @@ export const FavCoubs = () => {
           frameborder="0"
           allow="autoplay"
         ></iframe>
-        </div>
-        <div className="app__update">
-          <button
-            className="app__update-button"
-            onClick={() => {
-              updateVid();
-            }}
-          >
-            Show next one
-          </button>
-        </div>
+      </div>
+      <div className="app__update">
+        <button
+          className="app__update-button"
+          onClick={() => {
+            updateVid();
+          }}
+        >
+          Show next one
+        </button>
       </div>
       <script async src="//c-cdn.coub.com/embed-runner.js"></script>
     </div>

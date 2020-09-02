@@ -12,27 +12,19 @@ html {
 
 .app {
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
-
-  &__layout {
-    height: 100vh;
-  }
 
   &__title {
     font-size: 26px;
-    margin: 35px 0;
     text-align: center;
-  }
-
-  &__video {
-    margin-top: 25px;
   }
 
   &__update {
     text-align: center;
-    margin: 25px auto;
   }
 
   &__update-button {
@@ -55,21 +47,8 @@ html {
 
 @media (min-width: 550px) and (max-width: 996px) {
   .app {
-    &__layout {
-      height: 900px;
-    }
-
     &__title {
       font-size: 2em;
-      margin: 15px 0;
-    }
-
-    &__video {
-      margin-top: 45px;
-    }
-
-    &__update {
-      margin: 20px auto;
     }
 
     &__update-button {
@@ -82,21 +61,8 @@ html {
 
 @media (min-width: 996px) {
   .app {
-    &__layout {
-      height: 900px;
-    }
-
     &__title {
       font-size: 2em;
-      margin: 15px 0;
-    }
-
-    &__video {
-      margin-top: 45px;
-    }
-
-    &__update {
-      margin: 20px auto;
     }
 
     &__update-button {
