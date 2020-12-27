@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
+
 import { videoIds } from "../../data/videoIds";
+
+import { cn } from "../../helpers/classname";
 import { getVideoSize } from "../../helpers/getVideoSize";
 
 import "./Coub.scss";
 
 let playedVids = [videoIds[0]];
+
+const coubClassName = cn("coub");
 
 export const Coub = () => {
   const [video, setVideo] = useState(videoIds[0]);
@@ -34,9 +39,9 @@ export const Coub = () => {
   }, []);
 
   return (
-    <div className="app">
-      <h1 className="app__title">Enjoy my favourite coubs!</h1>
-      <div className="app__video">
+    <div className={coubClassName("layout")}>
+      <h1 className={coubClassName("title")}>Enjoy my favourite coubs!</h1>
+      <div className={coubClassName("video")}>
         <iframe
           title="video"
           src={`//coub.com/embed/${video}?muted=false&autostart=true&originalSize=false&startWithHD=false`}
@@ -47,9 +52,9 @@ export const Coub = () => {
           allow="autoplay"
         ></iframe>
       </div>
-      <div className="app__update">
+      <div className={coubClassName("next-button-layout")}>
         <button
-          className="app__update-button"
+          className={coubClassName("next-button")}
           onClick={() => {
             updateVid();
           }}

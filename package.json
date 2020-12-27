@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://livelife26.github.io/FavCoubs",
   "dependencies": {
+    "@bem-react/classname": "^1.5.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",

@@ -1,33 +1,23 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-.app {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
+.coub {
+  &__layout {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
 
   &__title {
     font-size: 26px;
     text-align: center;
   }
 
-  &__update {
+  &__next-button-layout {
     text-align: center;
   }
 
-  &__update-button {
+  &__next-button {
     border: none;
     background-color: rgb(192, 190, 190);
     width: 165px;
@@ -46,12 +36,12 @@ html {
 }
 
 @media (min-width: 550px) and (max-width: 996px) {
-  .app {
+  .coub {
     &__title {
       font-size: 2em;
     }
 
-    &__update-button {
+    &__next-button {
       width: 260px;
       height: 70px;
       font-size: 1.5rem;
@@ -60,12 +50,12 @@ html {
 }
 
 @media (min-width: 996px) {
-  .app {
+  .coub {
     &__title {
       font-size: 2.2em;
     }
 
-    &__update-button {
+    &__next-button {
       width: 240px;
       height: 70px;
       font-size: 1.5rem;
