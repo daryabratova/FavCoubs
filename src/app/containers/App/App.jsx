@@ -1,6 +1,6 @@
 import React from "react";
-import { FavCoubs } from "../FavCoubs";
+import { Coub } from "../Coub";
 
 export const App = () => {
-  return <FavCoubs />;
+  return <Coub />;
 };

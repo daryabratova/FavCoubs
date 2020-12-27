@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import { videoIds } from "../../data/videoIds";
 import { getVideoSize } from "../../helpers/getVideoSize";
 
-import "./FavCoubs.scss";
+import "./Coub.scss";
 
 let playedVids = [videoIds[0]];
 
-export const FavCoubs = () => {
+export const Coub = () => {
   const [video, setVideo] = useState(videoIds[0]);
   const [size, setSize] = useState(getVideoSize());
 
