@@ -1,4 +1,4 @@
-export const videoIds = [
+export const coubIds = [
   "28xy7m",
   "28ygku",
   "29ipbe",

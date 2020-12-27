@@ -3,9 +3,11 @@ export const getVideoSize = () => {
 
   if (screenWidth < 550) {
     return [screenWidth, screenWidth];
-  } else if (screenWidth < 996) {
-    return [500, 600];
-  } else {
-    return [800, 600];
   }
+
+  if (screenWidth < 996) {
+    return [500, 600];
+  }
+
+  return [800, 600];
 };
