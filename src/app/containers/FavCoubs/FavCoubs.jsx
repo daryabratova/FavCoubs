@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
-import { videosSrc } from "./data";
+import { videoIds } from "../../data/videoIds";
 import { getVideoSize } from "../../helpers/getVideoSize";
 
-import "./style.scss";
+import "./FavCoubs.scss";
 
-let playedVids = [videosSrc[0]];
+let playedVids = [videoIds[0]];
 
 export const FavCoubs = () => {
-  const [video, setVideo] = useState(videosSrc[0]);
+  const [video, setVideo] = useState(videoIds[0]);
   const [size, setSize] = useState(getVideoSize());
 
   const updateVid = () => {
-    let unplayedVids = videosSrc.filter((vid) => !playedVids.includes(vid));
+    let unplayedVids = videoIds.filter((vid) => !playedVids.includes(vid));
 
     if (unplayedVids.length === 0) {
       playedVids = [];
-      unplayedVids = videosSrc;
+      unplayedVids = videoIds;
     }
 
     const randomVid =

@@ -1,4 +1,4 @@
-export const videosSrc = [
+export const videoIds = [
   "28xy7m",
   "28ygku",
   "29ipbe",
