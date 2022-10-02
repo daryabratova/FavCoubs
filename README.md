@@ -4,7 +4,7 @@ Web app with some of my favourite videos from [Coub](https://coub.com/).
 
 ## Demo
 
-Online demo is available [here](https://livelife26.github.io/FavCoubs/).
+Online demo is available [here](https://daryabratova.github.io/FavCoubs/).
 
 ## Features
 
